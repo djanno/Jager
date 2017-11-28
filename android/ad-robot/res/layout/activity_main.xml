@@ -1,0 +1,326 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="end"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ad_robot.MainActivity" >
+
+    <TextView
+        android:id="@+id/connectionLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/connection_status"
+        android:textColor="#FF0000"
+        android:textColorHint="#FF0000" />
+
+    <RadioGroup
+        android:id="@+id/modeMenu"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <RadioButton
+            android:id="@+id/smartRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:enabled="false"
+            android:text="@string/smart_button" />
+
+        <RadioButton
+            android:id="@+id/lazyRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/lazy_button" />
+
+        <RadioButton
+            android:id="@+id/manualRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/manual_button" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/gearTwoButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|fill_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/leftGearTwoButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_two"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bothGearTwoButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_two"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/rightGearTwoButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_two"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gearOneButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|fill_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/leftGearOneButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_one"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bothGearOneButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_one"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/rightGearOneButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_one"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gearZeroButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|fill_horizontal" >
+
+        <Button
+            android:id="@+id/leftGearZeroButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_zero"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bothGearZeroButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_zero"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/rightGearZeroButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_zero"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gearMinusOneButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|fill_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/leftGearMinusOneButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_minus_one"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bothGearMinusOneButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_minus_one"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/rightGearMinusOneButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_minus_one"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gearMinusTwoButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|fill_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/leftGearMinusTwoButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_minus_two"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bothGearMinusTwoButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_minus_two"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/rightGearMinusTwoButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="@string/gear_minus_two"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/servoAndLightsControlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <Switch
+            android:id="@+id/Lights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:padding="5dp"
+            android:text="@string/lights_toggle" />
+
+        <Spinner
+            android:id="@+id/servoPositionSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/servo_positions"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/distanceControlsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/getDistanceButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/get_distance_button" />
+
+        <TextView
+            android:id="@+id/distanceLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:padding="2dp"
+            android:text="@string/distance_log"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal" />
+
+    <Button
+        android:id="@+id/backToAutoButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/to_auto_button" />
+
+</LinearLayout>

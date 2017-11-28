@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ad-robot</string>
+    <string name="connection_status">Connecting to the JAGER...</string>
+    <string name="action_settings">Settings</string>
+    <string name="smart_button">Smart</string>
+    <string name="lazy_button">Lazy</string>
+    <string name="manual_button">Manual</string>
+    <string name="lights_toggle">Lights</string>
+    <string name="gear_two"></string>
+    <string name="gear_one"></string>
+    <string name="gear_zero"></string>
+    <string name="gear_minus_one"></string>
+    <string name="gear_minus_two"></string>
+    <string name="get_distance_button">Get distance</string>
+    <string name="distance_log">N.D.</string>
+    <string-array name="servo_positions">
+        <item>90</item>
+        <item>45</item>
+        <item>0</item>
+        <item>180</item>
+        <item>135</item>
+    </string-array>
+   	<string name="to_auto_button">Back to autopilot</string>
+   	<string name="left_engine">LEFT ENGINE:</string>
+   	<string name="both_engines">BOTH ENGINES:</string>
+   	<string name="right_engine">RIGHT ENGINES:</string>
+    
+</resources>
